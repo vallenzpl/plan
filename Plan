@@ -1,0 +1,427 @@
+
+框架（图片 网络 实现）App中
+
+
+
+
+Gradle／Android工程的编译
+实现拆包／分库／热修复 
+kotlin 编程
+其他新技术
+python 复习
+
+
+DP相关：
+
+kotlin
+
+android device monitor
+
+视频播放器
+
+material design
+
+crash上报、符号化，解析 Python shell脚本  工具化
+RXJava实践
+
+泰坦
+
+管道流
+
+lint 接入、FindBugs、CheckStyle，
+
+打点架构实现
+整体架构
+
+动态代理 Proxy InvocationHandler
+
+
+push 保活，定位，手机Donzon状态，如何唤醒
+静态模型，模块化实现， 静态化模型 babel实现方式
+BaseDetectHelper.java
+splash页面实现 NovaMainApplication 阅读 皮肤实现
+
+app包大小控制方案 包体大小监控，缩小
+长连了解，
+
+图片在内存的大小控制，影响因素
+
+
+阻塞
+
+
+搭讪小工具
+
+ViewModel层的主要责任是表现逻辑和状态，即ViewModel层是连接View层和Model层的。Model层的一些业务逻辑的状态是需要通过ViewModel层暴露给View层来反映给软件使用者的。 
+
+跨越鸿沟
+定位
+
+
+value animator
+
+Environment.execCommand 
+
+socket/http协议，深入
+Bitmap
+
+dex拆分 细节 MultiDex  优化 坑 
+crash逻辑
+push保活
+
+hot fix
+web view
+h5
+
+android 打包 apk目录
+
+优化方案：静态模型，模块化实现， 静态化模型 babel实现方式
+
+算法
+
+android N 新特性
+
+java 异步 Future
+
+RxBus RXandroid 线程切换原理
+
+阻塞模型
+
+
+查看应用内存
+adb shell dmpsms package name
+
+
+高性能
+0、注意内存泄漏（比如数据库的Corsor对象关闭，content内存泄漏，使用工具Leaks检测）
+Thread会造成无法被GC吗？必须手动？
+Handler的惯用写法，内存泄漏 
+Activity中使用非静态内部类导致的，如果其实例的持有对象的生命周期大于其外部类对象，那么就有可能导致内存泄露。
+
+
+1、android 内存优化 onTrimMemory，主要是提示开发者在内存不足的时候，主动处理资源，释放内存，从而避免Android系统杀死，毕竟热启比冷启耀快很多
+
+2、避免使用Enum，使用SparseArray替代HashMap
+
+3、避免创建不必要的对象，对生命周期较短的临时变量，想办法规避掉每次都要创建，减少GC的次数，也是减少内存抖动，减少了Android系统的卡顿
+     这样GC回收被强制调用机会就会更少，留给Android系统进行UI渲染或者音频加载的时间就会更多，从而避免了卡顿现象
+
+4、慎用Service，下载使用IntentService
+5、将应用分为多个进程，减少被系统杀死的概率（注意后台进程不要与前台UI耦合）
+
+6、尽量提供与设备分辨率匹配的bitmap进入内存，否则，分辨率高的，会被压缩，当然，本身分辨率高的本身占用空间就大
+
+7、lint检查，去除不必要的资源，减小APK大小，使用Proguard混淆（好处？？补充下  ）
+8、软引用：内存足＝强，不足，回收 
+     弱引用：GC时即回收，生命周期更短
+
+9、尽量避免使用Enum。枚举相对于静态常量来说，需要两倍甚至更多的内存。
+10、布局层级 过度绘制
+11、启动 使用异步加载
+12、谨慎使用面向对象，避免不必要的额外代码，耗费了资源
+
+13、RXJava：
+Backpressure的几种策略 Buffer\Drop\Lastest
+lift原理：创建新的Subscriber，Obserable
+线程切换的原理
+subscribeOn() 设置被观察者的所在的线程，只有第一次有效
+observeOn()改变调用它之后代码的线程
+
+简单说:最原始的subscribeOn()—调用了—-create(new OperatorSubscribeOn<T>(this, scheduler))—-创建一个代理被观察者—->OperatorSubscribeOn()中实现了call()方法—->call()方法中调用了NewThreadWorker.schedule(Action0)—-Action0被包装称一个RUnnable对象,然后schedule()方法内部使用了线程池,创建一个新的线程,并将包装的Runnable对象传递进去,这样就实现了线程的切换
+
+步骤:
+A、原始被观察者调用subscribeOn()方法准备切换线程,(这时候还没切换呢.)产生一个代理被观察者
+B、原始订阅者订阅代理被观察者(明面代码上你能看得到的)
+C、代理被观察者的onSubscribe.call()方法执行,提供了一个Runnable对象,也就是线程已经被切换了
+D、新线程中产生一个新的代理观察者,代理观察者订阅原始被观察者(接下来的动作也都是在新线程中执行)
+E、原始被观察者发射数据,这个动作已经是在新线程中执行了
+F、代理观察者收到数据,再将数据转发给原始观察者
+
+
+
+
+
+通信加密 对称 非对称 sha1
+crash 上报解析流程实现
+APK包的结构逻辑，热修复实现
+线图实现
+
+RN
+
+软引用  若饮用
+
+明日：
+
+multidex 多dex
+包大小控制
+lint规则 复习
+热修复
+跨进程通信
+
+泰坦 了解
+
+
+算法
+复杂度
+
+View的绘制过程
+
+GC
+
+fresco库
+堆栈区别
+抽象类和接口
+设计模式 装饰者模式、单例模式、适配器模式、工厂模式
+RXJava
+
+
+K线实现图
+正则表达式
+
+
+
+
+APK架构，插桩，AAPT，编译过程
+热修复原理，以及实践，
+
+RXJava 切换线程的原理
+
+reactNative实践
+
+AppCompatActivity
+developer.android.com
+
+android 启动 app 新进程 过程
+
+contentProvider
+
+retrofit2
+
+
+实现一个RxAndroid的应用
+视频流
+RxAndroid
+图片 下载
+教程
+蓝牙方案调研
+后台sever工程
+各种模式应用
+
+git
+
+网络通信层
+高效IO实现 https://www.ibm.com/developerworks/cn/java/l-javaio/
+断点续传
+容器 同步方法 同步代码块 同步 锁
+java中的容器主要有List，Set，Map三种。了解这些容器的基本属性以及底层的实现，对正确高效的使用他们很有效。
+List下有ArrayList与LinkedeList。
+ArrayList 底层类似数组。
+LinkedList 底层类似与链表。
+Set下有HashSet，TreeSet，LinkedeHashSet。
+HashSet重复的值存储一次，查询快。
+TreeSet重复的值存储一次，存储为升序排列。
+LinkedHashSet重复的值存储一次，存储为放入顺序，查询快。
+Map下有HashMap,TreeMap,LinkedHashMap.
+HashMap重复键，存储后一个值，查询快。
+TreeMap重复键，存储后一个值，存储为升序排列。
+LinkedHashMap重复键，存储后一个值，存储为放入顺序，查询快
+
+andfix
+
+Droid Plugin
+
+https://github.com/Qihoo360/DroidPlugin/blob/master/readme_cn.md
+算法
+android网络长连  socket  http  原理  具体参数含义   ump原理 长连短连
+
+java虚拟机 Dalvik虚拟机
+
+垃圾回收机制 算法复习
+
+排序算法
+java虚拟机原理
+android插件原理
+android热补丁方案
+android网络框架
+android图片处理框架
+android动态化配置框架
+插件化
+android组件化实现方案
+android项目解耦合具体方案
+fresco
+onMeasure()和onLayout()方法
+
+x 1.44 / 3
+
+Note.js
+python
+React Native 
+
+gradler拆包
+http://blog.csdn.net/leeo1010/article/details/49903759
+混淆
+multidex 异步加载
+
+
+架构
+
+LayoutCast
+租房
+信用卡
+藏经阁－架构理解 通信协－ugc
+
+repo
+
+buck 编译工具
+
+1、gradler拆包
+2、RxJava
+3\ hadoop
+4、Multipart form
+volley
+okhttp
+android 二进制
+android 6.0
+notejs
+renderscript
+aar
+python
+MeasureSpec
+java map
+私家菜园
+定位
+10.128.103.119
+
+海宁市
+
+外包装完整 无磕碰 是否有使用痕迹 使用噪声 漏电 漏水 
+刚无意中点到你QQ空间唯一的一篇日志，感受到了小女生的细腻
+
+/Users/xiangwuzhu/Desktop/Development/androidSdk
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+
+DPMDev
+mdev52521070
+29593。68
+一辈子只面对一个人，想想就可怕，但如果是眼前这个人的话，愿意赌一下。
+愿执子之手，宁与子消忧。斟满杯中酒，为子没觥筹。轻点此烛头，渐探前路幽。赠子绕指柔，偕子尽白头。
+I love three things
+the sun,the moon and you
+the sun for day
+the moon for night
+and you for ever
+春林渐盛,春水初生,春风十里,不如你
+You make me want to be a better man. 
+你过来，我有个恋爱想跟你谈谈
+我渴望和你打架，也渴望抱抱你。
+
+
+~/.gradle/wrapper/dists/
+
+1.125
+git stash pop stash@{num}
+
+git branch -r -d origin/branch-name
+
+不成功，发现只是删除的本地对该远程分支的track，正确的方法应该是这样：
+
+git push origin :branch-name
+
+冒号前面的空格不能少，原理是把一个空分支push到server上，相当于删除该分支。
+
+
+
+
+TuanOrderListFragment
+6489616
+
+
+
+配置jdk的路径
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+
+删除jdk
+简单来讲,就是二个步骤,以管理员身份登录后:
+
+1. finder中搜索 JavaAppletPlugin.plugin,然后删除
+
+2. finder中进入 /Library/Java/JavaVirtualMachines,然后删除jdk1.7.xxx
+
+
+
+
+
+云山路1080弄8楼 陈敏婕 200120
+
+50755200 6988
+
+
+
+11-25 18:37:08.086: D/CrashReportHelper(6722): urlSchema: dianping://localshoplist?categoryid=10&categoryname=美食
+
+11-25 18:37:08.326: D/debug_request(6722): GET: http://m.api.dianping.com/searchshop.api?start=0&begindate=1416911828314&enddate=1416998228314&cityid=1&mylat=31.21734&mylng=121.41542&myacc=-1&locatecityid=1&categoryid=10&lat=31.21734&lng=121.41542&maptype=0&islocalsearch=1
+
+11-25 18:37:08.166: I/pv(6722): durl = dianping://localshoplist?categoryid=10&categoryname=美食 & refer = dianping://home
+
+
+
+算法
+
+
+解耦－组件化
+ －1.app模块插件化，每一个功能模块都类似于一个项目可以独立开发、运行、测试。这些模块UI跳转之间的耦合可以使用URL来进行跳转。
+－2.项目本身使用更加合理的框架，例如MVP，不能生搬硬套，更具项目情况合理使用。
+3.使用RxAndroid
+
+
+网络架构源码解析
+图片架构源码解析
+脚本
+
+
+多项目集成
+热修复，多个方案实现 参考美团的总结
+泰坦
+
+score
+
+viewGroup的考察(touch事件分发机制)
+View的描绘原理
+android的动画
+
+
+
+创建子进程
+
+
+
+
+如何快速查找android目录下的文件，读取
+
+
+httpurlconnection httpclient
+代理模式和装饰模式区别
+
+Python shell脚本  工具化
+多个开源框架了解（图片框架、HTTP请求OKhttp）Retrofit RxJava
+券商分时图实现
+支付功能
+
+maven仓库搭建
+RXJava应用深入
+
+gitlab 
+git 版本控制
+multiDex突破65535 分库
+Instant Run
+
+
+http 请求
+https
+
+首页splash实现
+
+正则表达式复习
+
+http://www.jianshu.com/p/fb8d21978e38
+http://www.jianshu.com/p/45cb536be2f4
