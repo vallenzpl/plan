@@ -1,12 +1,13 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
-热修复试验、美团robust必问
+Binder AIDL Android插件化
+券商分时K线图
+内存泄漏、性能调优
 Gradle插件
 webview实现，泰坦
 
 Kotlin
 
-Binder AIDL Android插件化
 Activity启动过程
 
 多渠道打包
@@ -40,8 +41,7 @@ RN
 Android Dalvik ART
 设计模式
 AOP
-券商分时K线图
-内存泄漏、性能调优
+
 图片在内存的影响因素
 Picasso缓存，原理实现，理解
 android APK文件目录
@@ -52,4 +52,5 @@ Node
 ＊＊＊ 已完成 ＊＊＊
 
 美团打点实现方案AOP
+热修复试验、美团robust必问
 
