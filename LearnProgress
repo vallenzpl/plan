@@ -1,27 +1,28 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
-Binder AIDL Android插件化
+Binder AIDL 
+App/Activity启动过程
+
+
 券商分时K线图
-内存泄漏、性能调优
-Gradle插件
+
+Android插件化
+
+内存泄漏、性能调优的措施
+
+Gradle插件/多渠道打包
 webview实现，泰坦
-
-Kotlin
-
-Activity启动过程
-
-多渠道打包
 
 同步 IO/NIO
 
 FFMpeg了解下
 
-RXJava
-
 kotlin
 
 Http
 picasso
+
+Linux 信号量
 
 堆
 ————————————————————————————————————————————————————————————
@@ -32,7 +33,6 @@ Java同步锁 IO/NIO
 View的创建、绘制、分发、动画
 
 MVC、MVVM、MVP 优缺点
-RxJava 线程切换原理
 Handler深入
 Java虚拟机、GC
 
@@ -54,3 +54,4 @@ Node
 美团打点实现方案AOP
 热修复试验、美团robust必问
 
+RXJava
