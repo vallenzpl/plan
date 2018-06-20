@@ -5,7 +5,7 @@ Loop 研究
 点评框架 新老 流程图 理解整理
 点评App性能优化的点，实现了解（App启动）
 实验UI卡顿工具 systrace/android profile
-包体积控制
+
 多线程
 TCP协议 网络框架源码 深入？加密算法？对称加密ASE 非对称RSA 
 RN／weex
@@ -15,13 +15,7 @@ kotlin 复习，开发demo
 
 https://blog.csdn.net/linder_qzy/article/details/52926187
 
-https://blog.csdn.net/huanghaibin_dev/article/details/66971925
-https://blog.csdn.net/ourpush/article/details/53385351
-https://blog.csdn.net/qq_35114086/article/details/53337105
-https://blog.csdn.net/kakaxi1o1/article/details/51740815
-https://blog.csdn.net/u010101067/article/details/48953093
-https://blog.csdn.net/bboyfeiyu/article/details/42740443/
-
+包体积控制：lint检查
 
 HashMap的各种性能对比，实现逻辑
 Java同步锁 IO/NIO 模型
