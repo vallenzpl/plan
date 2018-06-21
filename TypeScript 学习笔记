@@ -1,0 +1,19 @@
+TypeScript 学习笔记
+
+关键字 let 声明的变量旨在块级作用域内有效
+-块级作用域还有几点需要注意的：
+--	不能在它的声明之前被读取或赋值
+--	在同样的作用域中，let 不允许变量被重复声明
+
+const 声明与 let 声明相似,与 let 拥有相同的作用域规则
+const 声明的是常量，常量不能被重新赋值
+如果定义的常量是对象，对象里的属性值是可以被重新赋值的
+
+元组类型，如let x: [ string, number ] = [ "hello", 10 ]
+枚举类型，如enum Color { Red, Green, Blue }; let c: Color = Color.Green
+
+enum Color{}
+
+let mySum: (x: number, y: number) => number = function (x: number, y: number): number {
+    return x + y;
+};
