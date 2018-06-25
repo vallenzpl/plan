@@ -2,8 +2,8 @@
 
 Loop 研究
 
-Node.js 深入浅出
-Linux/UNIX系统编程手册
+
+socket编程
 
 点评框架 新老 流程图 理解整理
 点评App性能优化的点，实现了解（App启动）
@@ -70,7 +70,20 @@ AOP
 Picasso缓存，原理实现，理解
 android APK文件目录
 点评App架构
+
+
 Node
+Node.js 深入浅出
+Linux/UNIX系统编程手册
+JavaScript高级程序设计（第3版）
+ECMAScript 6 入门 (http://es6.ruanyifeng.com/)
+Koa2 进阶学习笔记：https://chenshenhai.github.io/koa2-note/note/start/async.html
+https://segmentfault.com/a/1190000009494041
+
+
+
+
+
 
 ————————————————————————————————————————————————————————————
 ＊＊＊ 已完成 ＊＊＊
