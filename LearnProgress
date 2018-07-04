@@ -2,12 +2,13 @@
 
 Loop 研究
 
+信号量，同步机制研究
 
-socket编程
+
 
 点评框架 新老 流程图 理解整理
 点评App性能优化的点，实现了解（App启动）
-实验UI卡顿工具 systrace/android profile
+
 
 多线程
 TCP协议 网络框架源码 深入？加密算法？对称加密ASE 非对称RSA 
@@ -81,7 +82,8 @@ Koa2 进阶学习笔记：https://chenshenhai.github.io/koa2-note/note/start/asy
 https://segmentfault.com/a/1190000009494041
 
 
-
+socket编程
+实验UI卡顿工具 systrace/android profile
 
 
 
