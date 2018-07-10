@@ -5,12 +5,15 @@ MVC/MVP
 Http2 多路复用
 
 
-Loop 研究
+https://www.jianshu.com/p/3d8f7ec1017a
+守护线程
+
+Handler Loop 研究
 
 HandlerThread
 子线程更新主线程的方式
 RXJava库的IOThread和new Thead
-ClassLoad
+ClassLoader
 
 
 Java NIO https://www.jianshu.com/p/465ecd909f8c
