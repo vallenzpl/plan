@@ -1,26 +1,25 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
+
+kotlin 复习，开发demo
+多线程 信号量，同步机制研究
+HandlerThread
+子线程更新主线程的方式
+RXJava库的IOThread和new Thead
+ClassLoader热修复
+shark
+算法题，leatcode
+生产者消费者模型，阻塞
+HashMap的各种性能对比，实现逻辑
+Java同步锁 IO/NIO 模型
+
+Java虚拟机、GC
 MVC/MVP
 软引用
 Http2 多路复用
 
 
-https://www.jianshu.com/p/c2a482b48d17
 守护线程
-
-Handler Loop 研究
-
-HandlerThread
-子线程更新主线程的方式
-RXJava库的IOThread和new Thead
-ClassLoader
-
-
-Java NIO https://www.jianshu.com/p/465ecd909f8c
-信号量，同步机制研究
-Sync
-shark
-算法题，leatcode
 
 
 
@@ -28,19 +27,17 @@ shark
 点评App性能优化的点，实现了解（App启动）
 
 
-多线程
 TCP协议 网络框架源码 深入？加密算法？对称加密ASE 非对称RSA 
 RN／weex
 NDK
-kotlin 复习，开发demo
+
 
 
 https://blog.csdn.net/linder_qzy/article/details/52926187
 
 包体积控制：lint检查
 
-HashMap的各种性能对比，实现逻辑
-Java同步锁 IO/NIO 模型
+
 
 保活 复习
 
@@ -59,9 +56,6 @@ HTTP 网络 简书
 https://www.jianshu.com/p/210f85108c52
 
 
-kotlin
-
-Http
 picasso
 
 Linux 信号量
@@ -76,8 +70,7 @@ Linux 信号量
 View的创建、绘制、分发、动画
 
 MVC、MVVM、MVP 优缺点
-Handler深入
-Java虚拟机、GC
+
 
 网络，Tcp长连原理，3次握手，OkHttp深度一般、Retrofit深入理解
 RN
