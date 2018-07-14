@@ -1,17 +1,20 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
 
-kotlin 复习，开发demo
 多线程 信号量，同步机制研究
-HandlerThread
 子线程更新主线程的方式
+生产者消费者模型，阻塞
+Java同步锁 IO/NIO 模型
+HandlerThread
+
+
+kotlin 复习，开发demo
+
 RXJava库的IOThread和new Thead
 ClassLoader热修复
 shark
-算法题，leatcode
-生产者消费者模型，阻塞
+算法题，leatcode, 两个链表合并，树遍历
 HashMap的各种性能对比，实现逻辑
-Java同步锁 IO/NIO 模型
 
 Java虚拟机、GC
 MVC/MVP
