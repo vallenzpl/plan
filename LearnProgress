@@ -1,28 +1,27 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
+算法题，leatcode, 两个链表合并，树遍历
 
-多线程 信号量，同步机制研究
-子线程更新主线程的方式
+信号量
+
 生产者消费者模型，阻塞
 Java同步锁 IO/NIO 模型
-HandlerThread
 
+
+HandlerThread
 
 kotlin 复习，开发demo
 
 RXJava库的IOThread和new Thead
 ClassLoader热修复
 shark
-算法题，leatcode, 两个链表合并，树遍历
+
 HashMap的各种性能对比，实现逻辑
 
 Java虚拟机、GC
 MVC/MVP
 软引用
 Http2 多路复用
-
-
-守护线程
 
 
 
@@ -33,7 +32,6 @@ Http2 多路复用
 TCP协议 网络框架源码 深入？加密算法？对称加密ASE 非对称RSA 
 RN／weex
 NDK
-
 
 
 https://blog.csdn.net/linder_qzy/article/details/52926187
