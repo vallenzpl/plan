@@ -2,25 +2,25 @@
 
 算法题，leatcode, 两个链表合并，树遍历
 
+TCP长连 实现
 信号量
+类加载器 ClassLoader热修复
+Protobuf / netty
+kotlin 复习，开发demo
+MVC/MVP
 
 生产者消费者模型，阻塞
 Java同步锁 IO/NIO 模型
 
 
-HandlerThread
-
-kotlin 复习，开发demo
-
 RXJava库的IOThread和new Thead
-ClassLoader热修复
-shark
+
 
 HashMap的各种性能对比，实现逻辑
 
 Java虚拟机、GC
-MVC/MVP
-软引用
+
+
 Http2 多路复用
 
 
