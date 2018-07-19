@@ -3,11 +3,14 @@
 算法题，leatcode, 两个链表合并，树遍历
 
 TCP长连 实现
-信号量
+
 类加载器 ClassLoader热修复
 Protobuf / netty
 kotlin 复习，开发demo
 MVC/MVP
+
+Bind机制
+四大组件的核心实现
 
 生产者消费者模型，阻塞
 Java同步锁 IO/NIO 模型
