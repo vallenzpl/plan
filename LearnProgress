@@ -2,37 +2,25 @@
 
 算法题，leatcode, 两个链表合并，树遍历
 
-TCP长连 实现
-
-类加载器 ClassLoader热修复
-Protobuf / netty
 kotlin 复习，开发demo
-MVC/MVP
-
+monitor监视器／condition 条件变量／Mutex 互斥量／信号量
+类加载器 ClassLoader热修复
+Java虚拟机、GC
 Bind机制
 四大组件的核心实现
 
-生产者消费者模型，阻塞
-Java同步锁 IO/NIO 模型
+HashMap的各种性能对比，实现逻辑
+Picasso图片控件 源码
 
+Protobuf / netty
+点评App性能优化的点，实现了解（App启动）
+保活 复习
+
+生产者消费者模型，阻塞
 
 RXJava库的IOThread和new Thead
 
 
-HashMap的各种性能对比，实现逻辑
-
-Java虚拟机、GC
-
-
-Http2 多路复用
-
-
-
-点评框架 新老 流程图 理解整理
-点评App性能优化的点，实现了解（App启动）
-
-
-TCP协议 网络框架源码 深入？加密算法？对称加密ASE 非对称RSA 
 RN／weex
 NDK
 
@@ -42,9 +30,6 @@ https://blog.csdn.net/linder_qzy/article/details/52926187
 包体积控制：lint检查
 
 
-
-保活 复习
-
 Android插件化
 
 内存泄漏、性能调优的措施
@@ -52,15 +37,12 @@ Android插件化
 Gradle插件/多渠道打包
 webview实现，泰坦
 
-
-
 FFMpeg了解下
 
 HTTP 网络 简书
 https://www.jianshu.com/p/210f85108c52
 
 
-picasso
 
 Linux 信号量
 
@@ -72,8 +54,6 @@ Linux 信号量
 各类算法复习——动态规划
 
 View的创建、绘制、分发、动画
-
-MVC、MVVM、MVP 优缺点
 
 
 网络，Tcp长连原理，3次握手，OkHttp深度一般、Retrofit深入理解
@@ -96,10 +76,7 @@ ECMAScript 6 入门 (http://es6.ruanyifeng.com/)
 Koa2 进阶学习笔记：https://chenshenhai.github.io/koa2-note/note/start/async.html
 https://segmentfault.com/a/1190000009494041
 
-
-socket编程
 实验UI卡顿工具 systrace/android profile
-
 
 
 ————————————————————————————————————————————————————————————
