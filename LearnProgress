@@ -3,8 +3,25 @@
 算法题，leatcode, 两个链表合并，树遍历
 
 Bind机制
+
+
+持续优化App启动&UI渲染
+
+App保活开发
+
+点评App无痕打点系统的开发和应用
+
+Crash日志符号化解析实现
+
+Robust热修复方案 ClassLoader
+
+点评客户端Shark通信架构 优化
+
+
+
+
 四大组件的核心实现
-kotlin 复习，开发demo
+
 monitor监视器／condition 条件变量／Mutex 互斥量／信号量
 类加载器 ClassLoader热修复
 Java虚拟机、GC
@@ -14,6 +31,8 @@ Java虚拟机、GC
 
 HashMap的各种性能对比，实现逻辑
 Picasso图片控件 源码
+
+kotlin 复习，开发demo
 
 Protobuf / netty
 点评App性能优化的点，实现了解（App启动）
