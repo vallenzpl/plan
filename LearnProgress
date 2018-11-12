@@ -3,6 +3,13 @@
 个人博客 https://blog.csdn.net/qqyanjiang
 android思绪整理：https://blog.csdn.net/ClAndEllen/article/details/79257663
 
+Android产品研发 https://blog.csdn.net/qq_23547831/article/details/51685310
+
+
+Android Activity的启动流程源码解析
+https://blog.csdn.net/pihailailou/article/details/78545391
+
+GreenDAO
 
 
 第三方库：Retrofit Rxjava等
@@ -18,6 +25,9 @@ Android：
 
 熟悉android系统架构,
 framework与底层库（JNI）
+
+Binder AIDL 
+App/Activity启动过程
 
 
 网络：
@@ -150,5 +160,4 @@ https://segmentfault.com/a/1190000009494041
 
 RXJava
 
-Binder AIDL 
-App/Activity启动过程
+
