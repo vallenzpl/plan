@@ -2,6 +2,8 @@
 
 —————— 必看 ——————
 Rxjava code一遍 RXJava库的IOThread和new Thead
+https://www.jianshu.com/p/0cd258eecf60
+
 Retrofit 原理，源码review一遍，
 
 
@@ -99,6 +101,25 @@ Protobuf / netty
 
 
 
+
+
+
+1. Object类中有哪些方法
+2. 怎么实现一个线程安全的单例模式
+3. Java中有哪些线程安全的数据集合
+4. Android中有哪些线程进程间通信方式？
+5. 如何确保一个service不被杀掉
+6. 介绍一下Handler的工作机制
+7. 子线程中有没有消息队列
+8. 多个handler能否绑定同一个线程，消息队列中的消息怎么分发的？
+9. 简单描述一下view的绘制过程
+10. 简单描述viewgroup中的事件分发机制
+11. Down事件和up事件可否在不同的viewgroup上消费
+12. 内存泄漏的本质原因时什么？
+13. 哪些场景下比较容易出现内存泄漏，如何避免？
+14. 造成app卡顿的原因有哪些？如何避免卡顿？
+15. 加载图片的时候如何避免出现OOM？
+16. 如何对apk包进行瘦身，有哪些方法？
 
 
 
