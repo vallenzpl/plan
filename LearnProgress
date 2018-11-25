@@ -1,5 +1,77 @@
 ＊＊＊ 学习优先级 ＊＊＊ High－>low
 
+—————— 必看 ——————
+Rxjava code一遍 RXJava库的IOThread和new Thead
+Retrofit 原理，源码review一遍，
+
+
+Android性能调优——持续优化App启动&UI渲染
+性能监控工具：实验UI卡顿工具 systrace/android profile
+包体积控制：lint检查
+内存泄漏
+
+
+算法题，leatcode, 两个链表合并，树遍历,
+堆 
+各类算法复习——动态规划
+
+
+
+Robust 使用 跑一遍
+Push/APP 保活
+美团无痕打点系统
+leackcanery
+Crash日志符号化解析实现
+
+热修复—— 美团Robust热修复方案 ClassLoader 加载资源 类加载器 ClassLoader热修复
+类ClassLoader：https://www.jianshu.com/p/ce71e096ebdf
+Android插件化
+
+
+Binder AIDL 
+App/Activity启动过程
+
+图片在内存的影响因素
+Picasso缓存，原理实现，理解,Picasso图片控件 源码
+android APK文件目录
+
+点评App架构
+
+Android Dalvik ART
+Java虚拟机、GC
+
+
+
+
+—————— 网络层 ——————
+4、TCP 心跳机制
+网络，Tcp长连原理，3次握手，OkHttp深度一般、Retrofit深入理解
+
+shark代码再研究 & Giant 网络库设计 & 移动App网络优化
+Mars研究
+网络：
+网络优化
+对移动端数据安全及常见的加密方式
+熟悉TCP/UDP/HTTP协议
+
+HTTP 网络 简书
+https://www.jianshu.com/p/210f85108c52
+
+
+
+—————— 其他 ——————
+1、Kotlin 写demo
+2、ASM Javaassist demo试验一遍
+3、来得及的话 RN／weex、 Flutter —— 混合开发
+熟悉android系统架构,
+framework与底层库（JNI）NDK
+GreenDAO
+Gradle插件/多渠道打包
+webview实现，泰坦
+
+
+
+
 个人博客 https://blog.csdn.net/qqyanjiang
 android思绪整理：https://blog.csdn.net/ClAndEllen/article/details/79257663
 
@@ -9,138 +81,36 @@ Android产品研发 https://blog.csdn.net/qq_23547831/article/details/51685310
 Android Activity的启动流程源码解析
 https://blog.csdn.net/pihailailou/article/details/78545391
 
-GreenDAO
-
-屏幕适配：https://blog.csdn.net/carson_ho/article/details/51234308
-
-
-第三方库：Retrofit Rxjava等
-
-设计模式：
-MVP，MVVM架构，其他各种模式
-
-Android：
-移动端性能调优
-能独立进行系统分析及模块设计
-
-各类组件与控件、网络通信机制
-
-熟悉android系统架构,
-framework与底层库（JNI）
-
-Binder AIDL 
-App/Activity启动过程
-
-
-网络：
-网络优化
-对移动端数据安全及常见的加密方式
-熟悉TCP/UDP/HTTP协议
-
-其他：
-RN 了解 —— 混合开发
-券商行情开发了解
-
-
-算法
-
-
-算法题，leatcode, 两个链表合并，树遍历
-
-
-对业务再梳理一遍
-Robust 使用 跑一遍
-Push保活
-打点系统
-leackcanery
-
-
-Bind机制
-
-
-持续优化App启动&UI渲染
-
-App保活开发
-
-点评App无痕打点系统的开发和应用
-
-Crash日志符号化解析实现
-
-Robust热修复方案 ClassLoader 加载资源
-
-点评客户端Shark通信架构 优化
-
-
-
+View的创建、绘制、分发、动画
 
 四大组件的核心实现
-
-monitor监视器／condition 条件变量／Mutex 互斥量／信号量
-类加载器 ClassLoader热修复
-Java虚拟机、GC
-
-类ClassLoader：https://www.jianshu.com/p/ce71e096ebdf
 四大组件源码：https://www.jianshu.com/u/3ed3336df2c6
 
-HashMap的各种性能对比，实现逻辑
-Picasso图片控件 源码
 
-kotlin 复习，开发demo
+—————————————————————————————— Java ——————————————————————————————————————
 
-Protobuf / netty
-点评App性能优化的点，实现了解（App启动）
-保活 复习
+monitor监视器／condition 条件变量／Mutex 互斥量／信号量
+Linux 信号量
 
 生产者消费者模型，阻塞
 
-RXJava库的IOThread和new Thead
+HashMap的各种性能对比，实现逻辑
+Protobuf / netty
 
 
-RN／weex
-NDK
 
 
-https://blog.csdn.net/linder_qzy/article/details/52926187
-
-包体积控制：lint检查
 
 
-Android插件化
 
-内存泄漏、性能调优的措施
 
-Gradle插件/多渠道打包
-webview实现，泰坦
-
+————————————————————————————————————————————————————————————
+＊＊＊  ＊＊＊
 FFMpeg了解下
 
-HTTP 网络 简书
-https://www.jianshu.com/p/210f85108c52
 
-
-
-Linux 信号量
-
-堆
-
-券商分时K线图
-————————————————————————————————————————————————————————————
-
-各类算法复习——动态规划
-
-View的创建、绘制、分发、动画
-
-
-网络，Tcp长连原理，3次握手，OkHttp深度一般、Retrofit深入理解
-RN
-Android Dalvik ART
-设计模式
-AOP
-
-图片在内存的影响因素
-Picasso缓存，原理实现，理解
-android APK文件目录
-点评App架构
+设计模式：
+MVP，MVVM架构，其他各种模式
 
 
 Node
@@ -151,15 +121,8 @@ ECMAScript 6 入门 (http://es6.ruanyifeng.com/)
 Koa2 进阶学习笔记：https://chenshenhai.github.io/koa2-note/note/start/async.html
 https://segmentfault.com/a/1190000009494041
 
-实验UI卡顿工具 systrace/android profile
 
 
-————————————————————————————————————————————————————————————
-＊＊＊ 已完成 ＊＊＊
 
-美团打点实现方案AOP
-热修复试验、美团robust必问
-
-RXJava
 
 
