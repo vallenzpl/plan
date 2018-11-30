@@ -8,6 +8,7 @@ Retrofit https://www.jianshu.com/p/f57b7cdb1c99
 
 
 
+
 Android性能调优——持续优化App启动&UI渲染
 性能监控工具：实验UI卡顿工具 systrace/android profile
 包体积控制：lint检查
