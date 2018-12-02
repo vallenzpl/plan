@@ -6,6 +6,7 @@ https://www.jianshu.com/p/0cd258eecf60
 
 Retrofit https://www.jianshu.com/p/f57b7cdb1c99
 
+https://www.jianshu.com/p/91718de18979
 
 
 
@@ -13,6 +14,7 @@ Android性能调优——持续优化App启动&UI渲染
 性能监控工具：实验UI卡顿工具 systrace/android profile
 包体积控制：lint检查
 内存泄漏
+https://blog.csdn.net/carson_ho/article/details/79708444?from=singlemessage
 
 
 算法题，leatcode, 两个链表合并，树遍历,
@@ -97,6 +99,14 @@ monitor监视器／condition 条件变量／Mutex 互斥量／信号量
 Linux 信号量
 
 生产者消费者模型，阻塞
+重写一个
+
+HashMap
+hashTab
+HashSet 
+
+
+
 
 HashMap的各种性能对比，实现逻辑
 Protobuf / netty
@@ -107,21 +117,65 @@ Protobuf / netty
 
 
 1. Object类中有哪些方法
+wait\notify\notifyall
+getclass\
+equal\hashcode
+toString
+clone
+finalize
+
+
 2. 怎么实现一个线程安全的单例模式
+public class Singleton {
+
+    private volatile static Singleton singleton = null;
+
+    public static synchronized Singleton getInstance() {
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new SingletonDCL();
+                }
+            }
+        }
+        return singleton;
+    }
+}
+
+
 3. Java中有哪些线程安全的数据集合
+Vector、HashTable、StringBuilder
+
+
 4. Android中有哪些线程进程间通信方式？
+ContentProvider
+File
+SharePreference
+
 5. 如何确保一个service不被杀掉
+
 6. 介绍一下Handler的工作机制
+
 7. 子线程中有没有消息队列
+
 8. 多个handler能否绑定同一个线程，消息队列中的消息怎么分发的？
+
 9. 简单描述一下view的绘制过程
+
 10. 简单描述viewgroup中的事件分发机制
+
 11. Down事件和up事件可否在不同的viewgroup上消费
+
 12. 内存泄漏的本质原因时什么？
+
 13. 哪些场景下比较容易出现内存泄漏，如何避免？
+
 14. 造成app卡顿的原因有哪些？如何避免卡顿？
+
 15. 加载图片的时候如何避免出现OOM？
+
 16. 如何对apk包进行瘦身，有哪些方法？
+
 
 
 
