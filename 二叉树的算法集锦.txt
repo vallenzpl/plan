@@ -137,6 +137,74 @@ int TreeDepth(TreeNode* pRoot)
     return deep;
 ｝
 
+广度优先搜索
+算法思想：用队列实现层序遍历，返回最后一层的高度。
+int maxDepth(TreeNode *root)
+{
+    if(root == NULL)
+        return 0;
+    
+    int depth = 0;
+    queue<TreeNode *> q;
+    q.push(root);
+    while(!q.empty())
+    {
+        ++ depth;
+        for(int i = 0, n = q.size(); i < n; ++i)
+        {
+            TreeNode *p = q.front();
+            q.pop();
+            
+            if(p->left != NULL)
+                q.push(p->left);
+            if(p->right != NULL)
+                q.push(p->right);
+        }
+    }
+    return depth;
+}
+
+深度优先搜索1
+算法思想：递归求左右子树高度，较大者 +1。
+int maxDepth(TreeNode *root)
+{
+    return root == NULL ? 0 : max(maxDepth(root -> left), maxDepth(root -> right)) + 1;
+}
+
+深度优先搜索2
+算法思想：用栈实现前序（或后序）遍历，最大栈长度即为树的高度。
+int maxDepth(TreeNode *root)
+{ 
+    TreeNode *p = root;
+    TreeNode *r = nullptr; 
+    int max = 0;    // 树高 
+    stack<TreeNode*> s; 
+    while(p || !s.empty()) 
+    { 
+        if(p != nullptr) 
+        { 
+            s.push(p); 
+            p = p->left; 
+        } 
+        else 
+        { 
+            p = s.top(); 
+            if(p->right != nullptr && p->right != r)     // p 有右孩子，且右孩子未进过栈
+                p = p->right; 
+            else 
+            { 
+                if(s.size() > max) 
+                    max = s.size();    // 更新最大高度 
+                r = p;    // 记录上一个弹出栈的节点
+                s.pop(); 
+                p = nullptr; 
+            } 
+        } 
+    } 
+    return max; 
+}
+
+
 
 ________
 // 最近公共祖先
